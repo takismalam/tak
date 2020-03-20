@@ -4,9 +4,9 @@ include "function.php";
 echo color("red"," ===========================\n");
 echo color("red","| Golek Voucher Gojek|\n");
 echo color("red","| Auto create Gojek X Redeem voucher |\n");
-echo color("red","| github: segonowar |\n");
-echo color("red","| fanspage :NowarLovers|\n");
-echo color("red","| Creator : NOWARS.com          |\n");
+echo color("red","| github: takismalam |\n");
+echo color("red","| fanspage :TakisMalam|\n");
+echo color("red","| Creator : TAKIS.com          |\n");
 echo "| Version : Premium X pertalite      |\n";
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
@@ -55,41 +55,41 @@ echo " ===========================\n";
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("red","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("yellow","!] Claim voc GOFOOD021120A");
+        echo "\n".color("yellow","!] Claim voc G-YN6TJY3");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD021120A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-YN6TJY3"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$message);
-        echo "\n".color("yellow","!] Claim voc GOFOOD022620A");
+        echo "\n".color("yellow","!] Claim voc G-YN6TJY3");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOOD022620A"}');
+        $boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD030920A"}');
         $messageboba10 = fetch_value($boba10,'"message":"','"');
         if(strpos($boba10, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba10);
         goto goride;
         }else{
         echo "\n".color("red","-] Message: ".$messageboba10);
-        echo "\n".color("yellow","!] Claim voc BELANJAYUK");
+        echo "\n".color("yellow","!] Claim voc COBAGOFOOD030920A");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BELANJAYUK"}');
+        $boba19 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD030920A"}');
         $messageboba19 = fetch_value($boba19,'"message":"','"');
         if(strpos($boba19, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+] Message: ".$messageboba19);
